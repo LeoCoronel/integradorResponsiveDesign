@@ -1,0 +1,41 @@
+.contact {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #6F6F6F;
+
+    &__left {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+        &__data {
+            ul {
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                    margin-top: 25px;
+                }
+            }
+        }
+        &__socials {
+            display: flex;
+            margin-top: 25px;
+            gap: 25px;
+            a {
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px){
+        &__right {
+            display: none;
+        }
+    }
+}

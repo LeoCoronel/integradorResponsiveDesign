@@ -1,0 +1,40 @@
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+
+    &__text {
+        width: 700px;
+        padding: 3em;
+
+        &__title {
+            font-size: 54px;
+            color: #6F6F6F;
+        }
+
+        &__subtitle {
+            color: #AA9589;
+            font-size: 26px;
+            font-weight: 100;
+        }
+
+        &__paragraph {
+            max-width: 560px;
+            color: #6F6F6F;
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+
+        &__text {
+            width: 100%;
+            padding: .2em;
+            margin-bottom: 50px;
+        }
+    }
+}

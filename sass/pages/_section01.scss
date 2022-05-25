@@ -1,0 +1,96 @@
+#section-01 {
+    .section-num__left {
+        background-color: #AA9589;
+    }
+}
+#section-02 {
+    .section-num__left {
+        background-color: #D4A373;
+    }
+}
+#section-03 {
+    .section-num__left {
+        background-color: #3D5467;
+    }
+}
+#section-04 {
+    .section-num__left {
+        background-color: #673D3D;
+    }
+}
+
+.section-num {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+
+    &__left {
+        width: 50%;
+        height: 100%;
+        display: grid;
+        place-content: center;
+        color: #fff;
+
+        &__text {
+            max-width: 560px;
+            margin-left: 250px;
+        }
+
+        &--border {
+            position: absolute;
+            transform: translateX(-100px) translateY(250px);
+            color: white;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            font-size: 300px;
+        }
+    }
+
+    &__right {
+        display: grid;
+        place-content: center;
+        width: 50%;
+        height: 100%;
+        & img {
+            width: 500px;
+            height: 600px;
+        }
+    }
+
+    @media (max-width: 800px){
+        flex-direction: column;
+        height: 100%;
+
+        &__left {
+            width: 100%;
+            height: 350px;
+            padding: 1em;
+
+            &__text {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            &--border {
+                position: relative;
+                transform: translateX(0px) translateY(0px);
+                color: white;
+                -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
+                font-size: 100px;
+            }
+        }
+
+        &__right {
+            margin: 2em;
+            & img {
+                width: 350px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+}
