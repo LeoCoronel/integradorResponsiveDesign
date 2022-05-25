@@ -33,18 +33,18 @@
         color: #fff;
 
         &__text {
-            max-width: 560px;
-            margin-left: 250px;
+            max-width: 500px;
+            padding: 2em;
         }
 
         &--border {
             position: absolute;
-            transform: translateX(-100px) translateY(250px);
+            transform: translateX(-70px) translateY(100px);
             color: white;
             -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: white;
-            font-size: 300px;
+            font-size: 200px;
         }
     }
 
@@ -53,9 +53,17 @@
         place-content: center;
         width: 50%;
         height: 100%;
+        padding: 2em;
+
         & img {
             width: 500px;
             height: 600px;
+            object-fit: cover;
+            transition: ease-in .2;
+        }
+
+        & img:hover {
+            transform: scale(1.1);
         }
     }
 
