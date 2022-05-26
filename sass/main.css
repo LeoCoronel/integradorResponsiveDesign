@@ -362,18 +362,18 @@ body {
   color: #6f6f6f;
   cursor: pointer;
 }
-.login__form form button {
+.login__form form .loginBtn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
   border: none;
   background-color: #3D5467;
   height: 40px;
   cursor: pointer;
   border-radius: 10px;
   margin-top: 10px;
-}
-.login__form form button a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
+  display: grid;
+  place-content: center;
 }
 .login__form p {
   font-size: 0.8em;
@@ -568,18 +568,18 @@ body {
   color: #6f6f6f;
   cursor: pointer;
 }
-.register__form form button {
+.register__form form .registerBtn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
   border: none;
   background-color: #3D5467;
   height: 40px;
   cursor: pointer;
   border-radius: 10px;
   margin-top: 10px;
-}
-.register__form form button a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
+  display: grid;
+  place-content: center;
 }
 .register__form p {
   font-size: 0.8em;
